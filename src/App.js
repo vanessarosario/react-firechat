@@ -3,6 +3,8 @@ import {
   googleAuthProvider,
   firebase
 } from "./config/firebase";
+import Button from "./components/Button";
+
 
 function App() {
   const signInWithGoogle = async () => {
@@ -20,7 +22,9 @@ function App() {
 
 
   return (
-    <div></div>
+    <div>
+      <Button onClick={signInWithGoogle}> sign In With Google</Button>
+    </div>
   );   
 }
 
