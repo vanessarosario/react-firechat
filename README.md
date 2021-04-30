@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## Resumen de lo realizado
 
@@ -12,3 +13,10 @@ Cambiar el nombre y el ícono personalizado de un flujo de trabajo
 Editar o eliminar pasos del flujo de trabajo
 Cancelar la publicación o eliminar un flujo de trabajo
 Cómo administrar los colaboradores de los flujos de trabajo
+=======
+## Presentacion 
+Este proyecto esta creado por Vanessa Rosario, Yusset Roque y Luis Angel Peña.
+
+Este proyecto consiste en la creacion de un chat utilizando Github y React. A traves de este pondremos a prueba nuestro conocimiento, ademas de que es una gran practica para trabajar en equipo. 
+#### Estudiantes de 6toD informatica 
+>>>>>>> origin/Yusset-readme
