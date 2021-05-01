@@ -13,17 +13,18 @@ function App() {
       console.error(e.message);
     }
   };
+  const { user, initializing} = useAuthState(firebase.auth());
 
   return (
     <div>
-      {user ? (
+    {
+      user ? (
         <>
-          <Button onClick={signInWithGoogle}> Sing In With Google</Button>
+          <Button onClick={signOut}> Salir</Button>
           <p>Bienvenidos al CHAT!</p>
         </>
-      ) : (
-        <Button onClick={signInWithGoogle}> Sing in with Google </Button>
-      )}
+      ) : <Button onClick={signInWithGoogle}> Sing in with Google </Button>
+     }
     </div>
   );
 }
