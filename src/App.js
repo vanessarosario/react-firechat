@@ -7,7 +7,7 @@ function App() {
   const signInWithGoogle = async () => {
     firebase.auth().useDeviceLanguage();
 
-    try {
+try {
       await firebase.auth().signInWithPopup(googleAuthProvider);
     } catch (e) {
       console.error(e.message);
@@ -27,13 +27,16 @@ function App() {
   return (
     <div>
     { renderLoading()}
+    {
       user ? (
         <>
           <Button onClick={signOut}> Salir</Button>
           <p>Bienvenidos al CHAT!</p>
         </>
       ) : <Button onClick={signInWithGoogle}> Sing in with Google </Button>
-     }
+
+      }
+
     </div>
   );
 }
