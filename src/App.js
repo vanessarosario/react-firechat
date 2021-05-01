@@ -1,3 +1,5 @@
+import { signInWithGoogle, signOut } from "./login";
+import { useAuthState } from "./hooks";
 import { db, googleAuthProvider, firebase } from "./config/firebase";
 import Button from "./components/Button";
 
@@ -14,7 +16,14 @@ function App() {
 
   return (
     <div>
-      <Button onClick={signInWithGoogle}> Sing In With Google</Button>
+      {user ? (
+        <>
+          <Button onClick={signInWithGoogle}> Sing In With Google</Button>
+          <p>Bienvenidos al CHAT!</p>
+        </>
+      ) : (
+        <Button onClick={signInWithGoogle}> Sing in with Google </Button>
+      )}
     </div>
   );
 }
