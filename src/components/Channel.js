@@ -23,7 +23,13 @@ const Channel = ({ user = null }) => {
     
 }, [])
 
-return <ul></ul>;
+return (
+    <ul>
+       { messages.map( message => (  
+           <li key={message.id}>{message.text}</li>
+       ))}
+   </ul>
+  );
 };
 
 export default Channel;
