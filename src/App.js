@@ -1,7 +1,8 @@
 import { signInWithGoogle, signOut } from "./login";
 import { useAuthState } from "./hooks";
 import { db, googleAuthProvider, firebase } from "./config/firebase";
-import Button from "./components/Button";
+import {Button, Channel} from "./components";
+ 
 
 function App() {
   const signInWithGoogle = async () => {
@@ -32,6 +33,7 @@ try {
         <>
           <Button onClick={signOut}> Salir</Button>
           <p>Bienvenidos al CHAT!</p>
+          <Channel user= {user} />
         </>
       ) : <Button onClick={signInWithGoogle}> Sing in with Google </Button>
 
