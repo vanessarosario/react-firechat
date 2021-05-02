@@ -31,7 +31,7 @@ try {
     {
       user ? (
         <>
-          <Button onClick={signOut}> Salir</Button>
+          <Button onClick={signOut}> Logout Google </Button>
           <p>Bienvenidos al CHAT!</p>
           <Channel user= {user} />
         </>
