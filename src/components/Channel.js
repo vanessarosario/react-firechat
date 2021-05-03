@@ -81,7 +81,6 @@ const Channel = ({ user = null }) => {
             className="boton btn-send"
             type="submit"
             disabled={!newMessage}
-            onClick={fixSroll()}
           >
             {" "}
             Enviar{" "}
