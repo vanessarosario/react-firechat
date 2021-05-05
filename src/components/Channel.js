@@ -24,7 +24,7 @@ const Channel = ({ user = null }) => {
 }, [])
 
 return (
-    <ul>
+    <ul className="color">
        { messages.map( message => (  
            <li key={message.id}>{message.text}</li>
        ))}
