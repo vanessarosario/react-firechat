@@ -25,7 +25,11 @@ function App() {
           <Channel user= {user} />
         </>
       ) : <Button onClick={signInWithGoogle} >Sing in with Google</Button>
+
+      
     }
+
+  
     </div>
   );
 }
