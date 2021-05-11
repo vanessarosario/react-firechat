@@ -1,3 +1,11 @@
 
 @import "./channel.css";
-@import "./button.css"
+@import "./button.css";
+
+body{
+
+    background-color: #add8e6;
+}
+
+
+ 
