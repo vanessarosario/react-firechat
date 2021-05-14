@@ -66,7 +66,7 @@ const Channel = ({ user = null }) => {
   
         <form className="form" onSubmit={handleOnSubmit}>
           <input
-            className="mensaje"
+            className="mensaje form-control"
             ref={inputRef}
             type="text"
             value={newMessage}
@@ -78,7 +78,7 @@ const Channel = ({ user = null }) => {
           {/* <button className="btn-emoji"></button> */}
   
           <button
-            className="boton btn-send"
+            className="boton btn btn-dark"
             type="submit"
             disabled={!newMessage}
           >
