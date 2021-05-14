@@ -20,11 +20,14 @@ function App() {
     {
       user ? (
         <>
-          <Button estilos="salir" onClick={signOut}> Logout Google </Button>
+          <Button estilos="salir btn btn-dark" onClick={signOut}> Logout Google </Button>
           <p>Bienvenidos al CHAT!</p>
           <Channel user= {user} />
         </>
-      ) : <Button onClick={signInWithGoogle} >Sign in with Google</Button>
+      ) : 
+      <div className="container_entrar"> <Button estilos="entrar btn btn-warning" onClick={signInWithGoogle} >Sign in with Google</Button> 
+   </div>
+      
 
       
     }
