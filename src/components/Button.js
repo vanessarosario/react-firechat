@@ -1,10 +1,11 @@
 
 const Button = ({
     onClick = null,
-    children = null
+    children = null,
+    estilos = null
 }) =>
 (
-    <button onClick={onClick}> {children} </button>
+    <button className={estilos} onClick={onClick}> {children} </button>
 
 )
 export default Button;
